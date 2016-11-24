@@ -189,3 +189,60 @@ create table StudentClassesEnrollment
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+--UPSERT CLASS
+
+--SET ANSI_NULLS ON
+--GO
+--SET QUOTED_IDENTIFIER ON
+--GO
+--CREATE PROCEDURE Upsert_Classes
+--	@ClassId	INT,
+--    @ClassName varchar(5),
+--	@CourseId INT
+--AS
+--BEGIN
+--	-- SET NOCOUNT ON added to prevent extra result sets from
+--	-- interfering with SELECT statements.
+--	SET NOCOUNT ON;
+
+----Start merging: Check if there is such an entry in the database. If FALSE, then Insert
+--MERGE
+--	dbo.Classes AS target
+--	USING(
+--			SELECT
+--			@ClassId,
+--			@ClassName,
+--			@CourseId
+--				) AS source
+--								(
+--									ClassId,
+--									ClassName,
+--									CourseId
+--								)
+--							ON (target.ClassId = source.ClassId)
+--							WHEN MATCHED THEN UPDATE
+--								SET
+--									target.ClassName = source.ClassName,
+--									target.CourseId = source.CourseId
+--							WHEN NOT MATCHED THEN INSERT
+--							(
+--								ClassName,
+--								CourseId
+--							) VALUES (
+--										source.ClassName,
+--										source.CourseId
+--										);
+--			SELECT SCOPE_IDENTITY();
+--END
+--GO
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+--VIEW Entrollment
+
+--create view vwStudentEnrollment
+--as 
+--select s.FirstName, s.LastName, e.CourseID,c.CourseName, e.AcademicYear, e.Semester from StudentClassesEnrollment e 
+--inner join Students s
+--on e.StudentID = s.StudentID
+--inner join Courses c on e.CourseID = c.CourseID
