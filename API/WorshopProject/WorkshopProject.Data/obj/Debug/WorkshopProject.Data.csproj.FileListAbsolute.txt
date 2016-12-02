@@ -1,0 +1,10 @@
+C:\Users\Acer\Documents\dev\Test\WorshopProject\WorkshopProject.Data\bin\Debug\WorkshopProject.Data.dll.config
+C:\Users\Acer\Documents\dev\Test\WorshopProject\WorkshopProject.Data\bin\Debug\WorkshopProject.Data.dll
+C:\Users\Acer\Documents\dev\Test\WorshopProject\WorkshopProject.Data\bin\Debug\WorkshopProject.Data.pdb
+C:\Users\Acer\Documents\dev\Test\WorshopProject\WorkshopProject.Data\bin\Debug\EntityFramework.dll
+C:\Users\Acer\Documents\dev\Test\WorshopProject\WorkshopProject.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Acer\Documents\dev\Test\WorshopProject\WorkshopProject.Data\bin\Debug\EntityFramework.xml
+C:\Users\Acer\Documents\dev\Test\WorshopProject\WorkshopProject.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\Documents\dev\Test\WorshopProject\WorkshopProject.Data\obj\Debug\WorkshopProject.Data.csprojResolveAssemblyReference.cache
+C:\Users\Acer\Documents\dev\Test\WorshopProject\WorkshopProject.Data\obj\Debug\WorkshopProject.Data.dll
+C:\Users\Acer\Documents\dev\Test\WorshopProject\WorkshopProject.Data\obj\Debug\WorkshopProject.Data.pdb

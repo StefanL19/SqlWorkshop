@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CourseRegistrationDbModelStoreContainer" CdmEntityContainer="CourseRegistrationDbEntities">
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="CourseRegistrationDbModel.Cours">
+        <MappingFragment StoreEntitySet="Courses">
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="CourseDesignation" ColumnName="CourseDesignation" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentCourseEnrollments">
+      <EntityTypeMapping TypeName="CourseRegistrationDbModel.StudentCourseEnrollment">
+        <MappingFragment StoreEntitySet="StudentCourseEnrollment">
+          <ScalarProperty Name="ClassEnrollmentID" ColumnName="ClassEnrollmentID" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="AcademicYear" ColumnName="AcademicYear" />
+          <ScalarProperty Name="EnrollmentDate" ColumnName="EnrollmentDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="CourseRegistrationDbModel.Student">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Standing" ColumnName="Standing" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CourseRegistrationDbModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="archiveStudents" FunctionName="CourseRegistrationDbModel.Store.archiveStudents" />
+    <FunctionImportMapping FunctionImportName="Course_RegisterStudent" FunctionName="CourseRegistrationDbModel.Store.Course_RegisterStudent" />
+    <FunctionImportMapping FunctionImportName="Courses_GetAll" FunctionName="CourseRegistrationDbModel.Store.Courses_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CourseRegistrationDbModel.Courses_GetAll_Result">
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="CourseDesignation" ColumnName="CourseDesignation" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Courses_GetById" FunctionName="CourseRegistrationDbModel.Store.Courses_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CourseRegistrationDbModel.Courses_GetById_Result">
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="CourseDesignation" ColumnName="CourseDesignation" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Courses_GetStudents" FunctionName="CourseRegistrationDbModel.Store.Courses_GetStudents">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CourseRegistrationDbModel.Courses_GetStudents_Result">
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Standing" ColumnName="Standing" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pCoursePerSemester" FunctionName="CourseRegistrationDbModel.Store.pCoursePerSemester" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="CourseRegistrationDbModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="CourseRegistrationDbModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="CourseRegistrationDbModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="CourseRegistrationDbModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CourseRegistrationDbModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="CourseRegistrationDbModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CourseRegistrationDbModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="CourseRegistrationDbModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="CourseRegistrationDbModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="Student_GetAll" FunctionName="CourseRegistrationDbModel.Store.Student_GetAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CourseRegistrationDbModel.Student_GetAll_Result">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Standing" ColumnName="Standing" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Students_GetById" FunctionName="CourseRegistrationDbModel.Store.Students_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CourseRegistrationDbModel.Students_GetById_Result">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Standing" ColumnName="Standing" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Upsert_Student" FunctionName="CourseRegistrationDbModel.Store.Upsert_Student" />
+  </EntityContainerMapping>
+</Mapping>
