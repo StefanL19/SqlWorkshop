@@ -1,0 +1,4 @@
+C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\Utils\bin\Debug\Utils.dll
+C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\Utils\bin\Debug\Utils.pdb
+C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\Utils\obj\Debug\Utils.dll
+C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\Utils\obj\Debug\Utils.pdb

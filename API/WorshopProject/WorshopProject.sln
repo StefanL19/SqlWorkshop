@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkshopProject.Data", "Wor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkshopProject.Services", "WorkshopProject.Services\WorkshopProject.Services.csproj", "{9700A6DB-0E7B-41C5-B7BF-32C1E4005203}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{96CDD2BD-CA3B-4347-9844-2D696BECD4EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9700A6DB-0E7B-41C5-B7BF-32C1E4005203}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9700A6DB-0E7B-41C5-B7BF-32C1E4005203}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9700A6DB-0E7B-41C5-B7BF-32C1E4005203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96CDD2BD-CA3B-4347-9844-2D696BECD4EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96CDD2BD-CA3B-4347-9844-2D696BECD4EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96CDD2BD-CA3B-4347-9844-2D696BECD4EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96CDD2BD-CA3B-4347-9844-2D696BECD4EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
