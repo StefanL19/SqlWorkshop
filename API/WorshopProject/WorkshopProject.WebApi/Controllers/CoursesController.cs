@@ -4,7 +4,9 @@ namespace WorkshopProject.WebApi.Controllers
     using Utils;
     using Services;
     using System.Web.Http;
+    using System.Web.Http.Cors;
 
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class CoursesController : ApiController
     {
         private CoursesService coursesService = new CoursesService();

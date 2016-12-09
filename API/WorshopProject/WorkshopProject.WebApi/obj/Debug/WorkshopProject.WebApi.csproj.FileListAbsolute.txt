@@ -134,3 +134,6 @@ C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\WorkshopProject.WebApi\o
 C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\WorkshopProject.WebApi\obj\Debug\WorkshopProject.WebApi.pdb
 C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\WorkshopProject.WebApi\bin\Utils.dll
 C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\WorkshopProject.WebApi\bin\Utils.pdb
+C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\WorkshopProject.WebApi\bin\System.Web.Cors.dll
+C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\WorkshopProject.WebApi\bin\System.Web.Http.Cors.dll
+C:\Users\Acer\Documents\dev\Workshop\API\WorshopProject\WorkshopProject.WebApi\bin\System.Web.Http.Cors.xml
